@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:'Muli', sans-serif ;
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: rgb(0, 0, 24);
+}
+html{
+    font-size: 62.5%;
+}
+/* navbar styling */
+nav{
+    background-color: inherit;
+    padding: 20px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+    transition: width 0.6s linear;
+}
+nav.active {
+    width: 500px;
+}
+
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width:0;
+    transition: width 0.6s linear;
+}
+nav.active ul {
+  width: 100%;
+}
+nav ul li {
+  transform: rotateY(0deg);
+  opacity: 0;
+  transition: transform 0.6s linear, opacity 0.6s linear;
+}
+nav.active ul li {
+    opacity: 1;
+    transform: rotateY(360deg);
+}
+body {
+    font-family:'Lato', sans-serif ;
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+
+}
+a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    color: blue;
+}
+.contact-wrapper{
+    
+    color: #f4f4f4;
+}
+.left-contact{
+float: left;
+width: 49%;
+height: 600px;
+}
+.right-form{
+    float: right;
+    width: 49%;
+    height: 600px;
+}
+.contact-wrapper::after{
+    content: '';
+    display: block;
+    clear:both ;
+}
+
+.loc h2{
+    display: inline-block;
+}
+
+.loc{
+    margin-bottom: 1rem;
+}
+.left-contact img{
+    object-fit: cover;
+    max-width: 90%;
+    min-height: 40rem;
+}
+
+.contact-heading{
+    margin-bottom: 2rem;
+}
+
+
+nav ul li {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.icon{
+    background-color: #fff;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    position:relative;
+    height: 30px;
+    width: 30px;
+    outline: none;
+}
+.icon:focus {
+    outline: 0;
+}
+.icon .line {
+    background-color: #5290f9;
+    height: 2px;
+    width: 20px;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    transition:transform 0.6s linear;
+
+}
+
+.icon .line2{
+    top: auto;
+    bottom: 10px;
+}
+nav.active .icon .line1 {
+    transform:rotateY(-765deg) translateY(7.5px);
+}
+nav.active .icon .line2 {
+    transform:rotateY(765deg) translateY(-7.5px);
+}
+.navbar a:link, .navbar a:visited{
+    color: #f4f4f4;
+}
+
+.navbar a:hover{
+    color: #e63946;
+}
+
+.lg-heading{
+    font-size: 5.2rem;
+}
+
+.md-heading{
+    font-size: 1.6rem;
+}
+
+.text-red{
+    color: #e63946;
+}
+
+.text-black{
+    color: #333333;
+}
+.text-yellow{
+    color: goldenrod;
+    transition: 0.2s ease-in;
+}
+
+.text-light{
+    color: #f4f4f4;
+    
+}
+
+.text-gray{
+    color: #555555;
+}
+
+
+.container{
+    background-color: rgba(0,0,0,0.4);
+    padding: 20px 40px;
+    border-radius: 7px;
+}
+
+.container h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container a {
+    text-decoration: none;
+    color: lightblue;
+    
+}
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    border-radius: 10px;
+    background-color: lightblue;
+    padding: 15px;
+    font-family: inherit;
+    font-size: 20px;
+
+}
+.btn:focus{
+    outline: 0;
+}
+
+.btn:active{
+    transform: scale(0.98);
+}
+
+.text{
+    margin-top: 30px;
+}
+
+.form-control{
+    position: relative;
+    margin: 20px 0 40px ;
+    width: 300px;
+}
+
+.form-control input{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 19px;
+    color: #fff;
+
+}
+
+.form-control input:focus, .form-control input:valid{
+    outline: 0;
+    border-bottom-color: lightblue;
+}
+.form-control label{
+    position: absolute;
+    top:15px;
+    left: 0;
+}
+
+.form-control label span{
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span{
+color: lightblue;
+transform: translateY(-30px);
+}
+/* ################### FOOTER STYLING #################### */
+.footer{
+    margin-top: 5rem;
+    padding: 2rem;
+    background-color: #000;
+    color: white;
+    text-align: center;
+}
+i:hover{
+    transform: scale(1.2); 
+}
+.slider img{
+     margin: 0 15rem;
+}
+
+.icons i{
+    margin: 2rem;
+}

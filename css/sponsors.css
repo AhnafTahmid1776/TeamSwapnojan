@@ -1,0 +1,318 @@
+ @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Mohave&family=Open+Sans&family=Oswald:wght@300;400;500&family=Poppins:wght@200&family=Roboto:wght@300&family=Rowdies&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header-content h1{
+    letter-spacing: 1.6rem;
+    color: gold;
+    font-family: 'Rowdies', cursive;
+    
+}
+/* navbar styling */
+ nav{
+    background-color: black;
+    padding: 20px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+    transition: width 0.6s linear;
+}
+nav.active {
+    width: 500px;
+}
+
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width:0;
+    transition: width 0.6s linear;
+}
+nav.active ul {
+  width: 100%;
+}
+nav ul li {
+  transform: rotateY(0deg);
+  opacity: 0;
+  transition: transform 0.6s linear, opacity 0.6s linear;
+}
+nav.active ul li {
+    opacity: 1;
+    transform: rotateY(360deg);
+}
+body {
+    font-family:'Lato', sans-serif ;
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+
+}
+
+nav ul li {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.icon{
+    background-color: #fff;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    position:relative;
+    height: 30px;
+    width: 30px;
+    outline: none;
+}
+.icon:focus {
+    outline: 0;
+}
+.icon .line {
+    background-color: #5290f9;
+    height: 2px;
+    width: 20px;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    transition:transform 0.6s linear;
+
+}
+
+.icon .line2{
+    top: auto;
+    bottom: 10px;
+}
+nav.active .icon .line1 {
+    transform:rotateY(-765deg) translateY(7.5px);
+}
+nav.active .icon .line2 {
+    transform:rotateY(765deg) translateY(-7.5px);
+}
+.navbar a:link, .navbar a:visited{
+    color: #f4f4f4;
+}
+
+.navbar a:hover{
+    color: #e63946;
+}
+
+
+/* ----------utility class------------ */
+
+.lg-heading{
+    font-size: 5.2rem;
+}
+
+.md-heading{
+    font-size: 1.6rem;
+}
+
+.text-red{
+    color: #e63946;
+}
+
+.text-black{
+    color: #333333;
+}
+.text-yellow{
+    color: goldenrod;
+    transition: 0.2s ease-in;
+}
+
+.text-light{
+    color: #f4f4f4;
+    
+}
+
+.text-gray{
+    color: #555555;
+}
+
+.header-content h2{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.header-content{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, 180%);
+    
+}
+a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    color: rgb(3, 3, 104);
+}
+html{
+    font-size: 62.5%;
+}
+
+ .header{
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     width: 100%;
+     height: 85vh;
+     animation:slide 20s infinite;
+     margin-bottom: 5rem;
+ }
+
+ .book:nth-of-type(even){
+    transform: translateX(-400%);
+}
+
+.book.show{
+    transform: translateX(0);
+}
+.book{
+    background-color: transparent;
+    color: steelblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    transform: translateX(400%);
+    transition: transform .7s ease;
+    font-size: 4.2rem;
+
+}
+.book.slot{
+    color: black;
+    font-size: 2.6rem;
+}
+
+
+@keyframes slide{
+    0%{
+        background-image:linear-gradient(rgba(161, 139, 139, 0.7), rgba(0,0,0,0.7)), url('../img/race2.jpg');
+    }
+    20%{
+        background-image:linear-gradient(rgba(161, 139, 139, 0.7), rgba(0,0,0,0.7)), url('../img/race2.jpg');
+    }
+    20.01%{
+        background-image:linear-gradient(rgba(161, 139, 139, 0.7), rgba(0,0,0,0.7)), url('../img/race5.jpg');
+    }
+    40%{
+        background-image: linear-gradient(rgba(161, 139, 139, 0.7), rgba(0,0,0,0.7)),url('../img/race5.jpg');
+    }
+    40.01%{
+        background-image:linear-gradient(rgba(161, 139, 139, 0.7), rgba(0,0,0,0.7)), url('../img/race6.jpg');
+    }
+    60%{
+        background-image:linear-gradient(rgba(161, 139, 139, 0.7), rgba(0,0,0,0.7)), url('../img/race6.jpg');
+    }
+    60.01%{
+        background-image:linear-gradient(rgba(161, 139, 139, 0.7), rgba(0,0,0,0.7)), url('../img/race9.jpg');
+    }
+    80%{
+        background-image:linear-gradient(rgba(161, 139, 139, 0.7), rgba(0,0,0,0.7)), url('../img/race9.jpg');
+    }
+    80.01%{
+        background-image:linear-gradient(rgba(161, 139, 139, 0.7), rgba(0,0,0,0.7)), url('../img/race7.jpg');
+    }
+    100%{
+        background-image:linear-gradient(rgba(161, 139, 139, 0.7), rgba(0,0,0,0.7)), url('../img/race7.jpg');
+    }
+}
+
+ /* sponsor styling */
+ 
+ .box{
+     
+     float: left;
+     width: 47%;
+ }
+
+ .boxes::after{
+     content: '';
+     clear: both;
+     display: block;
+ }
+ 
+.bottom::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.boxer{
+    width: 30%;
+    float: left;
+    
+    
+}
+.boxer:hover,.box:hover{
+    transform: scale(1.02);
+}
+.box5{
+    padding-left: 30rem;
+    padding-top: 3.7rem;
+}
+.box6{
+    padding-left: 10rem;
+    padding-top: 5rem;
+}
+.box7{
+    padding-right: 20rem;
+    padding-top: 5rem;
+}
+.box1{
+    padding-left: 10rem;
+}
+.box2{
+    padding-right: 17rem;
+    padding-top: 1rem;
+}
+.box3{
+    padding-left: 30rem;
+    padding-top: 5rem;
+}
+.box4{
+    padding-right: 20rem;
+}
+.box4 img{
+    height: 20rem;
+    width:20rem;
+}
+
+.feature-content span{
+    color: darkmagenta;
+    font-size: 6rem;
+    letter-spacing: 1.5rem;
+    font-weight: bold;
+}
+.middle{
+    margin-bottom: 10rem;
+}
+/* ################### FOOTER STYLING #################### */
+.footer{
+    margin-top: 5rem;
+    padding: 2rem;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+}
+i:hover{
+    transform: scale(1.2); 
+}
+.slider img{
+     margin: 0 15rem;
+}
+
+.icons i{
+    margin: 2rem;
+}
+
