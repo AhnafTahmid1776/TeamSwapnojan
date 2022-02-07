@@ -34,7 +34,7 @@
 
 /* navbar styling */
 nav{
-    background-color: black;
+    background-color: #004225;
     padding: 20px;
     width: 80px;
     display: flex;
@@ -85,7 +85,8 @@ nav ul li {
 }
 
 .icon{
-    background-color: #fff;
+    background-color:#ad0000 ;
+    border-radius: 20px;
     border: 0;
     cursor: pointer;
     padding: 0;
@@ -98,7 +99,7 @@ nav ul li {
     outline: 0;
 }
 .icon .line {
-    background-color: #5290f9;
+    background-color: #f4f5f5;
     height: 2px;
     width: 20px;
     position: absolute;
@@ -119,7 +120,7 @@ nav.active .icon .line2 {
     transform:rotateY(765deg) translateY(-7.5px);
 }
 .navbar a:link, .navbar a:visited{
-    color: #f4f4f4;
+    color: #f4f5f5;
 }
 
 .navbar a:hover{
@@ -150,7 +151,7 @@ nav.active .icon .line2 {
 }
 
 .text-light{
-    color: #f4f4f4;
+    color: #f4f5f5;
     
 }
 
@@ -161,7 +162,7 @@ nav.active .icon .line2 {
 .header-content h1{
     text-transform: uppercase;
     letter-spacing:1px ;
-    color: gold;
+    color: #ad0000;
     position: relative;
     font-weight: 900;
     transform:translate(-10%, -10%);
@@ -178,7 +179,7 @@ a {
     text-decoration: none;
     margin-bottom: 0.5em;
     letter-spacing: 0.15em;
-    color: rgb(3, 3, 104);
+    color:rgba(0, 0, 255, 0.637) ;
 }
 html{
     font-size: 62.5%;
@@ -199,8 +200,8 @@ html{
 }
 
 .box{
-    background-color: #f4f4f4;
-    color: #fff;
+    background-color: #f4f5f5;
+    color: #f4f5f5;
     align-items: center;
     justify-content: center;
     width: 48%;
@@ -232,7 +233,7 @@ html{
     font-weight: 600;
 }
 .left h2{
-    color:darkmagenta;
+    color:#004225;
     font-size: 3rem;
     text-align: center;
     letter-spacing: 0.5rem;
@@ -245,7 +246,7 @@ html{
     
 }
 .right h2{
-    color:darkmagenta;
+    color:#004225;
     font-size: 3rem;
     text-align: center;
     letter-spacing: 0.5rem;
@@ -258,16 +259,16 @@ html{
     
 }
 .about-wrapper{
-    background-color: rgb(231, 241, 245);
+    background-color: #f4f5f5;
 }
 .wrapper2{
-    background-color: rgb(231, 241, 245);
+    background-color: #f4f5f5;
 }
 .full{
-    background-color: rgb(231, 241, 245);
+    background-color: #f4f5f5;
 }
 .goal{
-    background-color: #f4f4f4;
+    background-color:#f4f5f5;
     color: #000;
     align-items: center;
     justify-content: center;
@@ -285,7 +286,7 @@ html{
     font-weight: 600;
 }
 .goal h2{
-    color:darkmagenta;
+    color:#004225;
     font-size: 3rem;
     text-align: center;
     letter-spacing: 0.5rem;
@@ -297,7 +298,7 @@ html{
     padding: 5rem;
 }
 .reward h3{
-    color:steelblue;
+    color:#ad0000;
     font-size: 5rem;
     text-align: center;
     letter-spacing: 0.5rem;
@@ -311,7 +312,7 @@ section.box-container{
     
 }
 .box-container span {
-    color: darkmagenta;
+    color: #004225;
     font-size: 3rem;
     text-align: center;
     letter-spacing: 0.5rem;
@@ -327,11 +328,12 @@ section.box-container{
 }
 
 .box2{
-    background: linear-gradient(to left, #232526, #414345); margin: 2rem 0;
+    background: linear-gradient(to right, #000000,  
+    #0f9b0f); margin: 2rem 0;
 
 }
 .box3{
-    background: linear-gradient(to left, #232526, #414345);
+    background: linear-gradient(to left, #000000, #0f9b0f);
     margin: 2rem 0;
 
 }
